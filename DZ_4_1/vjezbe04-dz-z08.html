@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Varijable</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function filtrirajPolje(polje) {
+        let novoPolje = [];
+        for (let i = 0; i < polje.length; i++) {
+          let trenutnaVrijednost = polje[i];
+          if (
+            trenutnaVrijednost.toUpperCase() === trenutnaVrijednost ||
+            trenutnaVrijednost.length >= 5
+          ) {
+            novoPolje.push(trenutnaVrijednost);
+          }
+        }
+        console.log(novoPolje);
+        document.write(novoPolje);
+      }
+      var arr = [
+        "Ovo",
+        "je",
+        "My",
+        "prvi",
+        "komad",
+        "OF",
+        "JAVASCRIPT",
+        "koda",
+        "Koji",
+        "je",
+        "proradio",
+      ];
+      filtrirajPolje(arr);
+    </script>
+  </body>
+</html>

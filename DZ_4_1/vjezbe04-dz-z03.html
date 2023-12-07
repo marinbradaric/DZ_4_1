@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Varijable</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // provjerava da li je broj prost
+      function isPrime(broj) {
+        if (broj <= 1) {
+          return false;
+        }
+        for (let i = 2; i <= Math.sqrt(broj); i++) {
+          if (broj % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+      // ispisuje proste brojeve u konzolu i html dokument
+      for (let i = 1; i <= 1000; i++) {
+        if (isPrime(i)) {
+          console.log(i);
+          document.write(i);
+          document.write("<br>");
+          brojac++;
+        }
+      }
+    </script>
+  </body>
+</html>
